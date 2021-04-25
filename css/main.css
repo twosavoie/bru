@@ -181,7 +181,7 @@ textarea {
      .hero-img {
        min-height: 400px;
      }
-   }
+  }
   .hero-img .container {
     width: 90%;
     display: flex;
@@ -484,7 +484,6 @@ textarea {
   .menu-items h2 {
     font-size: 2.5rem;
   }
-
   .testimonials .container {
     margin: 70px 0 0 0;
     padding-bottom: 70px;
