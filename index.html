@@ -7,11 +7,9 @@
   <title>bru coffee shop</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lora|Quicksand|Roboto:400,700" rel="stylesheet">
@@ -23,102 +21,107 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="container"></div>
-    <header>
-      <div class="logo">
+  <header>
+    <div class="container">
+      <figure>
         <img src="img/bru-logo-bigger4.png" alt="bru logo" />
-        <h1>Opening July 21st at 123 Main St.</h1>
-      </div>
-      <div class="hero-img clearfix">
-        <div class="hero-container"> <!-- maybe add a div to the top 2 and bottom 2 so they could be flex-start and flex-end? -->
+      </figure>
+      <h1>Opening July 21st at 123 Main St.</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-img">
+      <div class="container">
+        <div class="hero-header">
           <h2 id="meet-us">Meet us for coffee.</h2>
           <h2 id="coffee-offer">On the house!</h2>
+        </div>
+        <div class="hero-cta">
           <h2 id="scone-offer">Wouldn't a scone be delicious?</h2>
           <p id="cta">Oh yes. Sign me up please!</p>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="menu-offerings">
-        <div class="clearfix">
-          <div class="menu-container">
-            <img class="menu-icons" src="img/menu-icon.png" alt="menu icon" />
-            <p class="menu-id">menu</p>
-          </div>
+    <section class="menu-offerings">
+      <div class="container">
+        <div class="menu-items">
+          <img class="menu-icons" id="menu-icon" src="img/menu-icon-masked@2x.png" alt="menu icon" />
+          <h2 class="menu-id">menu</h2>
           <p class="menu-discription">You like it. You want it. We serve it. You get it.</p>
         </div>
-        <div class="clearfix">
-          <div class="menu-container">
-            <img class="menu-icons" src="img/solid-cup-icon.png" alt="cup icon" />
-            <p class="menu-id">coffee</p>
-          </div>
-          <p class="menu-discription">hot, iced, breve, espresso, con leche, mocha<br> In a hurry? Pour yourself a togo
-            on the honor system.</p>
-        </div>
-        <div class="clearfix">
-          <div class="menu-container">
-            <img class="menu-icons" src="img/solid-tea-icon.png" alt="tea icon" />
-            <p class="menu-id">tea</p>
-          </div>
-          <p class="menu-discription">green, black, oolong, chai, milky, cuppa, pot<br>We bru properly for a proper
-            cuppa.</p>
-        </div>
-        <div class="clearfix">
-          <div class="menu-container">
-            <img class="menu-icons" src="img/solid-bowl-icon.png" alt="bowl icon" />
-            <p class="menu-id">snack</p>
-          </div>
-          <p class="menu-discription">healthy, decadent, fruity, chocolate, chewy, crisp<br>Baked fresh, tummy friendly,
-            always satisfying.</p>
-        </div>
-      </section>
 
-      <section class="testimonials">
+        <div class="menu-items">
+          <img class="menu-icons" id="menu-icon-small" src="img/cup-icon-mask@2x.png" alt="cup icon" />
+          <h2 class="menu-id">coffee</h2>
+          <p class="menu-discription">hot, iced, breve, espresso, con leche, mocha</p>
+          <p class="tag-line">In a hurry? Pour yourself a togo on the honor system.</p>
+        </div>
+
+        <div class="menu-items">
+          <img class="menu-icons" id="menu-icon-small" src="img/tea-icon-mask@2x.png" alt="tea icon" />
+          <h2 class="menu-id">tea</h2>
+          <p class="menu-discription">green, black, oolong, chai, milky, cuppa, pot</p>
+          <p class="tag-line">We bru properly for a proper cuppa.</p>
+        </div>
+
+        <div class="menu-items">
+          <img class="menu-icons" id="menu-icon-small" src="img/bowl-icon-masked@2x.png" alt="bowl icon" />
+          <h2 class="menu-id">snack</h2>
+          <p class="menu-discription">healthy, decadent, fruity, chocolate, chewy, crisp</p>
+          <p class="tag-line">Baked fresh, tummy friendly, always satisfying.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
         <h2>Have you heard?</h2>
         <p>"Great place when I'm in a hurry. There is always a carafe of HOT coffee by the door. A quick fill-up and I'm
           on my way." Meagan M.</p>
         <p>"bru's brownies are amazing...and gluten-free, nut-free, fodmap friendly...and AMAZING!" Joey S.</p>
-      </section>
+      </div>
+    </section>
 
-      <section class="disclaimer">
+    <section class="disclaimer">
+      <div class="container">
         <h3>Details, Details</h3>
         <p>Join us Saturday July 21st or Sunday July 22nd for a coffee* on us. Enter our raffle to receive free coffee
           for a year!</p>
         <p>Sign up for our email newsletter and receive a coupon for a complimentary scone*.</p>
         <p>*Ok, really anything in the 3-4 buck range. You do you.</p>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="contact">
+  <footer class="contact">
+    <div class="container">
       <div class="find-us">
         <h2>Find Us</h2>
-        <ul>
-          <li>123 Main St.</li>
-          <li>Lovely Place, KS 66207</li>
-          <li>(You know. Across the street<br>from where the elephant ran<br>away from the circus that time.)</li>
-          <li>913-555-5555</li>
-          <li>hi@bru.com</li>
-        </ul>
+        <address>
+            <p>123 Main St.<br>
+              Lovely Place, KS 66207<br>
+              (You know. Across the streetfrom where the elephant ranaway from the circus that time.)<br>
+              913-555-5555<br>
+              hi@bru.com</p>
+        </address>
       </div>
       <div class="follow-us">
         <h2>Follow Us</h2>
         <ul>
-          <li twitter>
-            </>
-          <li facebook>
-            </>
-          <li pinterest>
-            </>
-          <li instagram>
-            </>
+          <li><a href=""><img src="img/twitter.png" alt="twitter icon" /></a></li>
+          <li><a href=""><img src="img/facebook.png" alt="facebook icon" /></a></li>
+          <li><a href=""><img src="img/instagram.png" alt="instagram icon" /></a></li>
+          <li><a href=""><img src="img/pinterest.png" alt="pinterest icon" /></a></li>
         </ul>
       </div>
       <div class="thanks">
-        <p>Thanks to Ali Yahya for photography/Unsplash</p>
+        <p>Thanks to Ali Yahya for the beautiful photograph which can be found on Unsplash</p>
       </div>
-    </footer>
-  </div> <!-- end container div -->
+    </div>
+  </footer>
+
 
 
 
