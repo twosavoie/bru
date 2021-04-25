@@ -109,13 +109,9 @@ textarea {
 
   body {
     font-size: 1em;
-    text-align: left;
+/*    text-align: left; */
    }
-   /* can't set a container for the entire site because I have a full-width image */
-/*   .container {    
-    width: 90%;
-    margin: 50px 0;
-   } */
+
 
   h2, h3, p, li, a {
     color: #75cb00;
@@ -182,6 +178,11 @@ textarea {
     flex-flow: row wrap;
     padding: 20px 0 5px 0;
    }
+   @media (min-width: 550px) {
+     .hero-img {
+       min-height: 400px;
+     }
+   }
   .hero-img .container {
     width: 90%;
     display: flex;
@@ -189,16 +190,19 @@ textarea {
     margin: 0;
     align-content: space-between;
   }
+  .hero-header, .hero-cta {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 100%;
+  }
   .hero-img h2 {
     color: white;  
     font-size: 1.5rem;  
     margin: 0;
+    width: 100%;
+    text-align: right;
    }
-  .hero-header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-  }
   #cta {
     text-align: center;
   }
@@ -208,15 +212,14 @@ textarea {
     font-size: 400;
     color: white;
     margin-top: 5px;
-    margin-right: 20px;
+/*    margin-right: 20px; */
     background-color: #75cb00;
     padding: 5px;
    }
 /* End Header styles */
 
 /* Main styles */
-  .menu-offerings {
-    
+  .menu-offerings {   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,29 +230,49 @@ textarea {
     border-bottom: 3px dotted #F99825; /* change to 5px in Media Queries */
     margin: 50px 0 0 0;
     padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .menu-column {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .menu-categories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .menu-icons {
+    width: 100%;
   }
   #menu-icon {
     margin-bottom: 30px;
   }
   /* the icons have different amounts of whitespace around them, this is just one way of accounting for it. */
-  #menu-icon-small {
+  .menu-icon-small {
     margin-bottom: -20px;
   }
+  .main-menu-items {
+    width: 100%;
+  }
   .menu-items {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-  .menu-items h2 {
+  .menu-id {
     width: 30%;
   }
-  .menu-items .menu-discription {
+  .menu-description {
     width: 70%;
   }
   .menu-id {
     margin-top: 0;
   }
-  .menu-discription {
+  .menu-description {
     margin-top: 0;
     text-align: center;  
   }
@@ -319,8 +342,16 @@ textarea {
     list-style-type: none;
   }
   .find-us li {
+    width: 100%;    
+  }
+  .follow-us {
+    margin-top: 50px;
+  }
+  .follow-us h2 {
     width: 100%;
-    
+  }
+  .thanks {
+    margin-top: 100px;
   }
   .thanks p {
     text-align: center;
@@ -440,12 +471,11 @@ textarea {
   }
   .hero-img h2 {
     font-size: 2.5rem;
-  }
-  #meet-us {
-    width: 58%;
+    width: 100%;
+    text-align: right;
   }
   #cta {
-    width: 100%;
+    width: 80%;
   }
 
   .menu-offerings .container {
@@ -471,6 +501,87 @@ textarea {
 
   footer .container {
     margin: 70px 0;
+  }
+  .follow-us {
+    margin-top: 70px;
+  }
+  .follow-us h2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .hero-img {
+    min-height: 800px;
+  }
+  .hero-img h2 {
+    font-size: 4rem;
+  }
+  #cta {
+    width: 70%;
+  }
+  .menu-offerings .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .menu-categories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .main-menu-items {
+    width: 70%;
+  }
+  #menu-icon {
+    width: 50%;
+  }
+  .main-menu-items h2 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-items {
+    width: 30%;
+    align-items: start;
+  }
+  .menu-items h2 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-items p {
+    font-size: 1.5rem;
+  }
+  .menu-items .menu-description {
+    width: 100%;
+  }
+  .testimonials .container {
+    width: 70%;
+  }
+
+  .disclaimer .container {
+    width: 70%;
+  }
+  .find-us a { 
+      font-size: 2rem;
+      text-decoration: none;
+  }
+  footer .container {
+    margin: 70px 0;
+    width: 70%;
   }
   .follow-us h2 {
     width: 100%;
