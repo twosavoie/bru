@@ -117,7 +117,7 @@ textarea {
     margin: 50px 0;
    } */
 
-  h2, h3, p, li {
+  h2, h3, p, li, a {
     color: #75cb00;
    }
 
@@ -313,9 +313,14 @@ textarea {
     width: 80%;
     justify-content: space-around;
     align-items: center;
+    flex-flow: row wrap;
   }
   .contact li {
     list-style-type: none;
+  }
+  .find-us li {
+    width: 100%;
+    
   }
   .thanks p {
     text-align: center;
@@ -410,9 +415,69 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  header .container {
+    margin: 70px 0 10px 0;
+  }
+  .hero-img {
+    min-height: 450px;
+    padding: 30px 0 10px 0;
+  }
+  .hero-img .container {
+    justify-content: flex-end;
+  }
+  .hero-img h2 {
+    font-size: 2.5rem;
+  }
+  #meet-us {
+    width: 58%;
+  }
+  #cta {
+    width: 100%;
+  }
+
+  .menu-offerings .container {
+    margin: 70px 0 0 0;
+    padding-bottom: 70px;
+    border-bottom: 5px dotted #F99825;
+  }
+  .menu-items h2 {
+    font-size: 2.5rem;
+  }
+
+  .testimonials .container {
+    margin: 70px 0 0 0;
+    padding-bottom: 70px;
+    border-bottom: 5px dotted #F99825;
+  }
+
+  .disclaimer .container {
+    margin: 70px 0 0 0;
+    padding-bottom: 70px;
+    border-bottom: 5px dotted #F99825;
+  }
+
+  footer .container {
+    margin: 70px 0;
+  }
+  .follow-us h2 {
+    width: 100%;
+  }
 }
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
