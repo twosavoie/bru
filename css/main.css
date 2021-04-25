@@ -109,7 +109,6 @@ textarea {
 
   body {
     font-size: 1em;
-/*    text-align: left; */
    }
 
 
@@ -163,7 +162,7 @@ textarea {
   }
   header h1 {    
     color: #75cb00;
-    border-top: solid 1px #F99825; /* change to 5px in Media Queries */
+    border-top: solid 1px #F99825; 
     width: 80%;
     text-align: center;
    }
@@ -212,7 +211,6 @@ textarea {
     font-size: 400;
     color: white;
     margin-top: 5px;
-/*    margin-right: 20px; */
     background-color: #75cb00;
     padding: 5px;
    }
@@ -227,7 +225,7 @@ textarea {
   }
   .menu-offerings .container {
     width: 80%;
-    border-bottom: 3px dotted #F99825; /* change to 5px in Media Queries */
+    border-bottom: 3px dotted #F99825; 
     margin: 50px 0 0 0;
     padding-bottom: 50px;
     display: flex;
@@ -316,7 +314,7 @@ textarea {
 
 /* Footer styles */
   footer {    
-    border-bottom: solid 1px #F99825; /* change to 5px in Media Queries */    
+    border-bottom: solid 1px #F99825;     
    }
    footer .container {
     width: 90%;
